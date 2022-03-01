@@ -1,0 +1,15 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli-bold/css/bpg-nino-mtavruli-bold.min.css");
+@import "~bootstrap/scss/bootstrap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "BPG Nino Mtavruli Bold", sans-serif;
+}
+
+body {
+  color: #fff;
+  background: url(./assets/images/bg.jpg) no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,164 @@
+:host {
+  cursor: default;
+  position: relative;
+  margin: 120px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .headerImage {
+    position: absolute;
+    top: -80px;
+    width: 100%;
+    height: auto;
+  }
+
+  .cashbackInfo {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.051);
+    box-shadow: 3.517px 8.285px 103px 0 rgba(0, 0, 0, 0.55);
+  }
+
+  .cash-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 100px;
+    text-align: center;
+
+    span {
+      font-size: 30px;
+    }
+
+    .colored {
+      color: #fdb936;
+    }
+  }
+
+  .cash-box {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .equals {
+      margin: 0 60px;
+    }
+
+    .box-first,
+    .box-second {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 190px;
+      height: 160px;
+      border-radius: 3px;
+      text-align: center;
+      line-height: 82px;
+    }
+
+    .box-first {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #7c2dc5;
+      background-color: #ffffff;
+      border-radius: 3px;
+
+      .top {
+        text-align: center;
+        width: 90%;
+        height: 60px;
+        margin: 10px auto;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ebebeb;
+        line-height: 1.2em;
+      }
+
+      .bottom {
+        font-size: 40px;
+      }
+    }
+
+    .box-second {
+      background-color: #631bc8;
+
+      .top {
+        text-align: center;
+        width: 90%;
+        height: 60px;
+        margin: 10px auto;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #3f29b1;
+        line-height: 1.2em;
+      }
+
+      .bottom {
+        color: #ffffff;
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  :host {
+    .headerImage {
+      top: -50px;
+    }
+    margin: 120px 10px;
+  }
+}
+
+@media (max-width: 960px) {
+  :host {
+    .headerImage {
+      top: -40px;
+    }
+    .cash-text {
+      margin: 40px 50px;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  :host {
+    .headerImage {
+      top: -35px;
+    }
+    .cash-box {
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .equals {
+        margin: 60px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  :host {
+    margin: 60px 10px;
+    .headerImage {
+      top: -20px;
+    }
+  }
+}

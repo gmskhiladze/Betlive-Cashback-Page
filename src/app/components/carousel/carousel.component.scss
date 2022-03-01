@@ -1,0 +1,241 @@
+:host {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    background: url(https://promotion.betlive.com/public/50SlotCashback/assets/img/slider/main_bg.png)
+      center/cover no-repeat;
+
+    .slides {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .card-vissible-left {
+        transform: translateX(-150px) scale(0.7);
+
+        .card-header {
+          cursor: default;
+          position: absolute;
+          width: 60%;
+          top: -28px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 30px;
+          font-size: 1.3em;
+          font-weight: 700;
+          color: #000;
+          background-color: #fff;
+        }
+
+        .card-body {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 8px 98px 0 rgb(0 0 0 / 51%);
+          border-radius: 4px;
+          background: url(https://promotion.betlive.com/public/50SlotCashback/assets/img/slider/slide_bg.png)
+            center/100% 100% no-repeat #391b69;
+          transition: all 0.8s ease-in-out;
+        }
+      }
+
+      .card-vissible-right {
+        transform: translateX(150px) scale(0.7);
+
+        .card-header {
+          cursor: default;
+          position: absolute;
+          width: 60%;
+          top: -28px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 30px;
+          font-size: 1.3em;
+          font-weight: 700;
+          color: #000;
+          background-color: #fff;
+        }
+
+        .card-body {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 8px 98px 0 rgb(0 0 0 / 51%);
+          border-radius: 4px;
+          background: url(https://promotion.betlive.com/public/50SlotCashback/assets/img/slider/slide_bg.png)
+            center/100% 100% no-repeat #391b69;
+          transition: all 0.8s ease-in-out;
+        }
+      }
+
+      .card-hidden {
+        display: none;
+      }
+
+      .card-vissible {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 215px;
+        position: relative;
+        border: none;
+
+        .card-header {
+          cursor: default;
+          position: absolute;
+          width: 60%;
+          top: -28px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 30px;
+          font-size: 1.3em;
+          font-weight: 700;
+          color: #000;
+          background-color: #fff;
+        }
+
+        .card-body {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 8px 98px 0 rgb(0 0 0 / 51%);
+          border-radius: 4px;
+          background: url(https://promotion.betlive.com/public/50SlotCashback/assets/img/slider/slide_bg.png)
+            center/100% 100% no-repeat #391b69;
+          transition: all 0.8s ease-in-out;
+        }
+      }
+    }
+
+    .arrow {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 0;
+      bottom: 0;
+      margin: auto -40px;
+      opacity: 0.85;
+      cursor: pointer;
+      border-radius: 4px;
+      z-index: 3;
+      transition: all 0.3s ease;
+      opacity: 1;
+    }
+
+    .arrow-left {
+      left: calc(50% - 200px);
+      background: url(https://promotion.betlive.com/public/50SlotCashback/assets/img/slider/arrow_left.png)
+        center no-repeat #fff;
+    }
+    .arrow-right {
+      right: calc(50% - 200px);
+      background: url(https://promotion.betlive.com/public/50SlotCashback/assets/img/slider/arrow_right.png)
+        center no-repeat #fff;
+    }
+
+    .arc {
+      position: absolute;
+      top: 0;
+    }
+
+    .arc-left {
+      left: 0;
+
+      .left-arc-front {
+        position: absolute;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+
+      .left-arc-middle {
+        max-width: 100%;
+      }
+
+      .left-arc-back {
+        position: absolute;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 0;
+      }
+    }
+
+    .arc-right {
+      right: 0;
+
+      .right-arc-front {
+        position: absolute;
+        max-width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 2;
+      }
+
+      .right-arc-middle {
+        max-width: 100%;
+      }
+
+      .right-arc-back {
+        position: absolute;
+        max-width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 0;
+      }
+    }
+
+    .slider-bottom {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  :host {
+    .slider-wrapper {
+      .arrow {
+        top: 69%;
+        bottom: 0;
+        margin: auto -40px;
+      }
+
+      .arrow-left {
+        left: calc(50% - 100px);
+      }
+      .arrow-right {
+        right: calc(50% - 100px);
+      }
+    }
+  }
+}

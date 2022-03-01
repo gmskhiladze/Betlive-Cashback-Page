@@ -1,0 +1,15 @@
+<nav [ngClass]="isScroll ? 'top-header colored': 'top-header'">
+    <div class="container">
+        <div class="logo-container">
+            <a href="/" class="logo-link"><img src="./assets/images/logo/betlive_logo.png" alt="Logo"></a>
+        </div>
+        <div class="language-container">
+            <span [ngClass]="isActive.ge ? 'language-link ge active': 'language-link ge'"
+                (click)="changeLAng($event)"><img src="./assets/images/flags/ge_flag.svg" alt="Flag GE"></span>
+            <span [ngClass]="isActive.ru ? 'language-link ru active': 'language-link ru'"
+                (click)="changeLAng($event)"><img src="./assets/images/flags/ru_flag.svg" alt="Flag RU"></span>
+            <span [ngClass]="isActive.en ? 'language-link en active': 'language-link en'"
+                (click)="changeLAng($event)"><img src="./assets/images/flags/en_flag.svg" alt="Flag EN"></span>
+        </div>
+    </div>
+</nav>

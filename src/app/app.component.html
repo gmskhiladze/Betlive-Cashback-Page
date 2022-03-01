@@ -1,0 +1,45 @@
+<div class="container-fluid">
+  <div class="row justify-content-center align-items-center cashbackLogo">
+    <app-header (language)="getActiveLanguage($event)"></app-header>
+  </div>
+</div>
+
+<div (window:resize)="onResize($event)" [ngClass]="classNameChange ? 'container-fluid' : 'container'">
+
+  <div class="row justify-content-center align-items-center cashbackLogo">
+    <img src="./assets/images/logo/cashback.png" alt="CashbackLogo">
+  </div>
+
+  <div class="row justify-content-center align-items-center">
+    <app-steps></app-steps>
+  </div>
+
+  <div class="row justify-content-center align-items-center">
+    <app-button></app-button>
+  </div>
+
+  <div class="row justify-content-center align-items-center">
+    <app-carousel></app-carousel>
+  </div>
+
+  <div class="row justify-content-center align-items-center">
+    <app-button></app-button>
+  </div>
+
+  <div class="row justify-content-center align-items-center">
+    <app-cashback-info></app-cashback-info>
+  </div>
+
+  <div class="row justify-content-center align-items-center">
+    <app-infobox></app-infobox>
+  </div>
+
+  <div class="row justify-content-center align-items-center">
+    <app-button></app-button>
+  </div>
+
+  <div class="row justify-content-center align-items-center">
+    <app-rulles></app-rulles>
+  </div>
+
+</div>
